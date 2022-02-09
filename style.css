@@ -1,0 +1,996 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track
+{
+    background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background:linear-gradient( #164A7D, #28B9E4);
+}
+
+#preloader
+{
+    background:url(images/preloader.gif) no-repeat center center;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header h1 {
+    background-color: #fff;
+    color: #375a6c;
+}
+
+.header .m-1 {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    background-color: #164A7D;
+    padding: 5px;
+    float: right;
+    border: 2px solid black;
+    transition: 0.5s ease-in-out;
+}
+
+.header .m-1:hover {
+    background-color: #28B9E4;
+    color: #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #28B9E4;
+}
+
+#navbarDropdown {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 19px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.dropdown-item
+{
+    background-color: #000000;
+}
+
+.dropdown-menu {
+    border: 0px solid #28B9E4;
+    margin-top: -5px;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.dropdown-menu a {
+    color: #fff;
+}
+
+.dropdown-menu a:hover {
+    transition: 0.4s;
+}
+
+.carousel-inner h1 {
+    color: #164A7D;
+    background-color: #fff;
+    width: fit-content;
+    padding: 5px;
+}
+
+.carousel-inner p {
+    background: #28B9E4;
+    width: fit-content;
+    padding: 5px;
+}
+
+.fa-chevron-right {
+    font-size: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+.fa-chevron-right:hover {
+    color: #1f63a8;
+}
+
+.fa-chevron-left {
+    font-size: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+.fa-chevron-left:hover {
+    color: #1f63a8;
+}
+
+.highlights {
+    background: #fff;
+}
+
+.highlights .col-lg-1 {
+    background-color: #164A7D;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    padding-right: 0;
+}
+
+.highlights .row {
+    border-bottom: 2px solid #164A7D;
+}
+
+.highlights h3 {
+    font-weight: 100;
+    margin: 2px;
+}
+
+.highlights p {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.ourcourses .card-title h1 {
+    color: #28B9E4;
+}
+
+.ourcourses h3 {
+    line-height: 50px;
+}
+
+.ourcourses a {
+    text-decoration: none;
+    color: #164A7D;
+}
+
+.ourcourses a:hover {
+    color: #28B9E4;
+}
+
+.ourcourses p {
+    line-height: 15pt;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.ourcourses a i {
+    font-size: 30px;
+    color: #28B9E4;
+    transition: 0.2s ease-in-out;
+}
+
+.ourcourses a i:hover {
+    color: #F6EE08;
+}
+
+.ourcourses hr {
+    border: 2px solid #F6EE08;
+    margin-top: 60px;
+}
+
+.aboutngi {
+    background: url(student/image/form1.jpg);
+    background-size: cover;
+}
+
+.aboutngi p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.aboutngi .card-body {
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.521);
+}
+
+.aboutngi h1 {
+    color: #28B9E4;
+    
+}
+
+.gallery {
+    background: url(images/footer.png);
+    padding: 10px;
+    align-items: center;
+}
+
+.gallery .card-title h1 {
+    color: #28B9E4;
+    margin-bottom: 60px;
+}
+
+.gallery h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #fff;
+}
+
+.gallery p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    justify-content: center;
+    border: 2px solid #ddd84e;
+    padding: 20px;
+    color: #fff;
+}
+
+.gallery .far {
+    font-size: 6rem;
+    color: #000000;
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery .far:hover {
+    color: #F6EE08;
+    cursor: pointer;
+}
+
+.addmission {
+    padding: 30px;
+}
+
+.addmission .card {
+    border: none;
+}
+
+.addmission .card h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #164A7D;
+    padding: 20px;
+    word-spacing: 5px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.addmission .card a {
+    color: #000;
+    text-decoration: none;
+    line-height: 40px;
+    word-spacing: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.addmission .card a:hover {
+    color: #28B9E4;
+    border-bottom: 3px solid rebeccapurple;
+}
+
+.addmission .card span {
+    color: #ddd84e;
+    text-decoration: none;
+    font-size: 55px;
+}
+
+.addmission label {
+    color: #fff;
+}
+
+.addmission h1 {
+    color: #164A7D;
+}
+
+.addmission .card p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: -7px;
+}
+
+.addmission hr {
+    border: 2px solid #f1ef4b;
+}
+
+.addmission .form-control {
+    border: none;
+    border-radius: 0px;
+}
+
+.addmission .enquiry {
+    border-radius: 2px;
+}
+
+.addmission button {
+    border: 2px solid #164A7D;
+    color: #000000;
+    transition: 0.2s ease-in-out;
+    border-radius: 0px;
+}
+
+.addmission button:hover {
+    color: #28B9E4;
+    background: #164A7D;
+}
+
+.enquiry {
+    background: #28B9E4;
+}
+
+.enquiry .card-title {
+    color: #ddd84e;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.enquiry .fas {
+    color: #164A7D;
+    margin-right: 5px;
+    font-size: larger;
+}
+
+.noticestudents {
+    margin-bottom: 50px;
+}
+
+.noticestudents h3 {
+    color: #28B9E4;
+}
+
+.notice marquee {
+    background: rgba(116, 90, 90, 0.096);
+    height: 90%;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 100;
+}
+
+.placedstudents .card {
+    width: 20%;
+    text-align: justify;
+    margin: 9px;
+    margin: auto;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.placedstudents .card:hover {
+    box-shadow: 2px 3px 4px rgba(99, 97, 97, 0.288);
+}
+
+.placedstudents .btn {
+    color: #164A7D;
+    transition: 0.5s;
+    float: right;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.placedstudents .btn:hover {
+    color: #ddd84e;
+}
+
+.map h3 {
+    color: #164A7D;
+}
+
+.reqruiters .card-title {
+    color: #fff;
+    width: 100%;
+    background: #28B9E4;
+    text-align: center;
+    justify-content: center;
+}
+
+.reqruiters h1 {
+    font-weight: 500;
+    width: fit-content;
+    padding: 2px;
+    text-align: center;
+}
+
+.reqruiters .slide {
+    padding: 10px;
+}
+
+.reqruiters .slider {
+    display: flex;
+    max-height: auto;
+    scroll-behavior: smooth;
+}
+
+.footer {
+    background: url(Images/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer h3 {
+    color: #fff;
+    border-bottom: 2px solid #28B9E4;
+}
+
+.footer h1 {
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    width: fit-content;
+    transition: 0.2s;
+    font-size: large;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #000;
+}
+
+.contact p {
+    line-height: 20px;
+}
+
+.contact .fa-instagram,
+.fa-facebook-f,
+.fa-twitter,
+.fa-linkedin-in {
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    padding: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact .fa-instagram:hover,
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-linkedin-in:hover {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.getontop .col-lg-12 {
+    text-align: end;
+    padding-bottom: 5px;
+}
+
+.getontop .fa-angle-double-up {
+    color: #fff;
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.getontop .fa-angle-double-up:hover {
+    color: #000;
+}
+
+
+/* ERP lOGIN */
+
+.erpheader {
+    color: #fff;
+    background: #164A7D;
+    text-align: center;
+    padding: 15px;
+}
+
+.erplogin {
+    position: relative;
+    background: #28B9E4;
+    color: #fff;
+    width: fit-content;
+    bottom: 26px;
+}
+
+.erplogin h3 {
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.erpform .ngikanpur {
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000;
+    border: 3px solid #164A7D;
+}
+
+.erpform .form-group input {
+    border: 2px solid #164A7D;
+}
+
+.erpform .form-group label {
+    font-weight: 600;
+}
+
+.erpform button {
+    background: #28B9E4;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.erpform button:hover {
+    background: #164A7D;
+    color: #fff;
+}
+
+.ngikanpur h1 {
+    color: #1f63a8;
+    border-radius: 3px;
+    font-size: 80px;
+    font-family: Monotype Corsiva;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ngikanpur span {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.erpwelcome h1 {
+    color: #1f63a8;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 2px;
+    text-align: center;
+}
+
+.erpwelcome p {
+    font-size: 17px;
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.erpwelcome a {
+    background-color: #164A7D;
+    padding: 5px;
+    border: 1px solid black;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.erpwelcome a:hover {
+    background: #28B9E4;
+    color: #fff;
+}
+
+
+/* Student Pannel*/
+
+.studentpannel {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: #164A7D;
+    transition: 0.4s;
+}
+
+.studentimage h1 {
+    color: #fff;
+    border-radius: 3px;
+    font-size: 60px;
+    font-family: Monotype Corsiva;
+    text-align: center;
+    font-weight: 600;
+}
+
+.my-container {
+    transition: 0.4s;
+    margin-left: 250px;
+}
+
+.active-nav {
+    margin-left: -300px;
+}
+
+.active-cont {
+    margin-left: 0px;
+}
+
+#menu-btn {
+    background-color: #28B9E4;
+    color: #fff;
+}
+
+.studentimage span {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.studentpannel .studentimage {
+    text-align: center;
+}
+
+.studentpannel
+{
+    box-shadow: 10px 0px 20px 0px #164A7D;
+}
+
+.studentimage img {
+    width: 97%;
+}
+
+.studentimage h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 100;
+}
+
+.nav-pills .nav-link {
+    font-weight: 100;
+    color: #fff;
+}
+
+.nav-pills .second.active,
+.show.second {
+    background-color: darkorange;
+    transition: 0.5s;
+}
+
+.nav-pills .third.active,
+.show.third {
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+.nav-pills .fourth.active,
+.show.fourth {
+    background-color: darkred;
+    transition: 0.5s;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: #164A7D #164A7D #fff;
+    border-width: 1px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #164A7D;
+}
+
+
+/* Online Payment*/
+
+.input-group-prepend .input-group-text {
+    background: none;
+    border-top: 2px solid #164A7D;
+    border-left: 2px solid #164A7D;
+    border-bottom: 2px solid #164A7D;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* navbar institutions */
+
+.navcourses {
+    text-transform: capitalize;
+}
+
+.navcourses p {
+    text-align: justify;
+    line-height: 40px;
+}
+
+
+/* Event Photos*/
+
+
+.eventsimage .eventngi .card-title h1 {
+    color: #164A7D;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.eventsimage .eventngi .card-title h5 {
+    border: 2px solid #164A7D;
+    color: #000;
+    padding: 5px;
+    text-align: justify;
+    text-transform: capitalize;
+    line-height: 28px;
+    word-spacing: 2px;
+    border-radius: 4px;
+}
+
+.eventsimage .card {
+    transition: 0.5s ease-in-out;
+    background-color: #164A7D;
+    color: #fff;
+    opacity: 1;
+    height: fit-content;
+}
+
+.eventsimage img {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.eventsimage img:hover {
+    opacity: 0.6;
+}
+
+.eventsimage .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+}
+
+
+/*National Seminar*/
+
+.ngievents .card {
+    margin: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.ngievents .card:hover {
+    box-shadow: #164A7D 0px 5px 15px;
+}
+
+.ngievents .card-body h1 {
+    color: #164A7D;
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 3px solid #28B9E4;
+    padding: 5px;
+}
+
+/*switch button*/
+
+.outer .toggle .circle {
+    margin-left: 3px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.outer .toggle {
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background: #092c3e;
+    right: 15px;
+    top: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/*switch darkmode*/
+
+#switch {
+    display: none;
+}
+
+#switch:checked~.outer {
+    background: #092c3e;
+}
+
+#switch:checked~.outer .content {
+    background: #092c3e;
+}
+
+#switch:checked~.outer .toggle {
+    background: #fff;
+}
+
+#switch:checked~.outer .circle {
+    margin-left: 22px;
+    background: #092c3e;
+}
+
+#switch:checked~.outer i {
+    color: #fff;
+    opacity: 1;
+}
+
+#switch:checked~.outer p {
+    color: #fff;
+}
+
+#switch:checked~.outer .header h1 {
+    color: #fff;
+    background: none;
+}
+
+#switch:checked~.outer .highlights .row {
+    color: #fff;
+    background: #092c3e;
+}
+
+#switch:checked~.outer .ourcourses h3 {
+    color: #fff;
+}
+
+#switch:checked~.outer .ourcourses i {
+    color: #28B9E4;
+}
+
+#switch:checked~.outer .ourcourses a {
+    color: #fff;
+}
+
+#switch:checked~.outer .ourcourses a:hover {
+    color: #28B9E4;
+}
+
+#switch:checked~.outer .aboutngi .card-body {
+    backdrop-filter: blur(3px);
+    background-color: #092c3e;
+}
+
+#switch:checked~.outer .gallery .far:hover {
+    color: #F6EE08;
+    cursor: pointer;
+}
+
+#switch:checked~.outer .addmission .card {
+    background: #092c3e;
+    color: #fff;
+}
+
+#switch:checked~.outer .addmission .card a {
+    color: #fff;
+}
+
+#switch:checked~.outer .addmission .card h3 {
+    color: #fff;
+}
+
+#switch:checked~.outer .addmission button:hover{
+    color: #28B9E4;
+}
+
+#switch:checked~.outer .enquiry input {
+    background: #092c3e;
+    color: #fff;
+}
+
+#switch:checked~.outer .enquiry text {
+    color: #fff;
+}
+
+#switch:checked~.outer .placedstudents .card {
+    background-color: #092c3e;
+    color: #fff;
+    border: 1px solid #28B9E4;
+}
+
+#switch:checked~.outer .placedstudents button{
+    color: #28B9E4;
+}
+
+#switch:checked~.outer button:hover {
+    color: #F6EE08;
+}
+
+/*Admin Pannel*/
+.adminpannel .form-control
+{
+    border: 1px solid #000000;
+    border-radius: 0px;
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.adminpannel button {
+    border: 2px solid #164A7D;
+    color: #000000;
+    transition: 0.2s ease-in-out;
+    border-radius: 0px;
+}
+
+.adminpannel button:hover {
+    color: #28B9E4;
+    background: #164A7D;
+}
+
+
+/* hide sidebar navbar*/
+
+@media only screen and (max-width: 800px) {
+    .studentpannel {
+        margin-left: -300px;
+    }
+
+    .my-container {
+        transition: 0.4s;
+        margin-left: 0px;
+    }
+
+    /* for navbar */
+    .active-nav {
+        margin-left: 0px;
+    }
+
+    /* for main section */
+    .active-cont {
+        margin-left: 250px;
+    }
+}
+
+
+
